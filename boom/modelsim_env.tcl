@@ -1,0 +1,11 @@
+set ::env(MILESAN_DIR) /scratch/tkovats/ssh_mnt/milesan-designs/milesan-cva6/milesan
+set ::env(TRACE) trace
+set ::env(INSTRUMENTATION) drfuzz_mem
+set ::env(MILESAN_META_COMMON) /scratch/tkovats/ssh_mnt/milesan-meta/design-processing/common
+set ::env(TOP_SOC) top_tiny_soc
+set ::env(SV_TOP) src/top_tiny_soc_drfuzz_mem.sv
+set ::env(SV_MEM) /scratch/tkovats/ssh_mnt/milesan-meta/design-processing/common/src/ift_sram_mem.sv
+set ::env(SV_TB) dv/sv/tb_top_taints.sv
+set ::env(TRACEFILE) /scratch/tkovats/ssh_mnt/milesan-data/test_trace_boom.vcd
+set ::env(SIMSRAMELF) /scratch/tkovats/ssh_mnt/milesan-data/boom/260114_boom_232_153/rtlreduce260114_boom_232_153_24_0_1_0.elf
+set ::env(SIMSRAMTAINT) /scratch/tkovats/ssh_mnt/milesan-data/boom/260114_boom_232_153/rtlreduce260114_boom_232_153_24_0_1_0.simsramtaint.txt
